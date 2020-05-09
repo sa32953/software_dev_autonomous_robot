@@ -1,0 +1,4 @@
+string data    # Pass a string messgage
+---
+bool success      # Did it achieve it?
+

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="sa_192128_miniprj" type="drive_sensibly.py" name="drive_sensibly" output="screen"/>
+    <include file="$(find goal_publisher)/launch/goal_publisher.launch"/>
+</launch>
