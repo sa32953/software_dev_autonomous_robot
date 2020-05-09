@@ -38,7 +38,7 @@ rosservice call /cancel_server "data: 'pass'"
 
 ## Node dependencies
 
-![](images/node_dependency.png) 
+![](node_dependency.png) 
 
 # Abstract description and Implementation of the algorithm
 
