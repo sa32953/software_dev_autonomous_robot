@@ -57,6 +57,8 @@ B. When there is any obstacle in front (checked by dictionary value of Laser sca
 
 Have a look at the State Machine graph for better understanding.
 
+![](AAMR.png) 
+
 The robot checks its own displacement and orientation after every 10 seconds and compares it with threshold values given. If there is not enough movement it is probably stuck and tires to re-orient itself
 
 Once all targets are achieved, it shuts down. It has done a lot of work and needs some rest.
