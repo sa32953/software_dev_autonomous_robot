@@ -1,0 +1,4 @@
+<launch>
+    <node pkg='ex_10_multi_square' type='multi_square.py' name='multi_square' output='screen'/>
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
+</launch>

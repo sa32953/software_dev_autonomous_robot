@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ex07_launch_file" type="ex07_node.py" name="ex07_node" output="screen"/>
+    <include file="$(find goal_publisher)/launch/goal_publisher.launch"/>
+</launch>

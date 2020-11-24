@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ex13_turtle_client" type="move_turtle_client.py" name="turtle_client" output="screen"/>
+</launch>

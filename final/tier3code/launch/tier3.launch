@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="tier3code" type="tier3.py" name="tier3" output="screen"/>
+</launch>
+

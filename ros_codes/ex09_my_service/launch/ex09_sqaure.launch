@@ -1,0 +1,4 @@
+<launch>
+    <node pkg='ex09_my_service' type='square_bot.py' name='square_move' output='screen'/>
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
+</launch>

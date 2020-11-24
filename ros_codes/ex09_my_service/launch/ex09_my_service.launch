@@ -1,0 +1,3 @@
+<launch>
+    <node pkg='ex09_my_service' type='my_service.py' name='my_service' output='screen'/>
+</launch>

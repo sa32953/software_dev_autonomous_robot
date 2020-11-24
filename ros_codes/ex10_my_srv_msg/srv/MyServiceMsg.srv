@@ -1,0 +1,4 @@
+float64 radius    # The distance of each side of the square
+int32 repetitions # The number of times to move in a square
+---
+bool success      # Did it achieve it?

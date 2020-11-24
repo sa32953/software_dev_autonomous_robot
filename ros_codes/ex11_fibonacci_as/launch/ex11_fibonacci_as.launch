@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ex11_fibonacci_as" type="mp_trial_fibo.py" name="fibonacci" output="screen"/>
+</launch>

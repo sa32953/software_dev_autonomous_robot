@@ -1,0 +1,3 @@
+<launch>
+    <node pkg='ex09_my_service' type='square_service.py' name='square_service_client' output='screen'/>
+</launch>

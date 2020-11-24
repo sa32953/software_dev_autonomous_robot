@@ -1,0 +1,42 @@
+<launch>
+
+    <!-- ARGUMENTS -->
+
+    <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+    <!-- Changed to map2.yaml given in tier4 repo -->
+    <arg name="map_file" default="$(find final_proj_demo)/maps/map2.yaml"/>
+    <arg name="open_rviz" default="true"/>
+    <arg name="move_forward_only" default="false"/>
+
+    <!-- MAP SERVER -->
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+    <!-- Turtlebot3 -->
+    <include file="$(find turtlebot3_bringup)/launch/turtlebot3_remote.launch">
+        <arg name="model" value="$(arg model)" />
+    </include>
+
+    <!-- RVIZ -->
+    <group if="$(arg open_rviz)"> 
+      <node pkg="rviz" type="rviz" name="rviz" required="true"
+            args="-d $(find turtlebot3_navigation)/rviz/turtlebot3_navigation.rviz"/>
+    </group>
+
+    <!-- Gazebo -->
+    <include file = "$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch" >
+    </include>
+
+    <!-- MOVE BASE -->
+    <include file="$(find my_move_base_launcher)/launch/my_move_base_launcher.launch">
+        <arg name="model" value="$(arg model)" />
+        <arg name="move_forward_only" value="$(arg move_forward_only)"/>
+    </include>
+
+    <!-- Goal Publisher -->
+    <include file="$(find goal_publisher)/launch/goal_publisher.launch"/>
+
+    <!-- AMCL -->
+    <include file="$(find my_amcl_launcher)/launch/my_amcl_launcher.launch"/>
+
+
+</launch>

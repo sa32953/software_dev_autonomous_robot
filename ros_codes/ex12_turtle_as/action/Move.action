@@ -1,0 +1,9 @@
+#goal
+string direction
+int32 duration
+---
+#result
+string final_state
+---
+#feedback
+string current_state

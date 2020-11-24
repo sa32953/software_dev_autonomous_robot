@@ -1,0 +1,9 @@
+DWAPlannerROS:
+    
+    # Goal Tolerance Parametes
+    xy_goal_tolerance: 0.1 # original 0,05
+    yaw_goal_tolerance: 3.13 # original 0,17
+    latch_xy_goal_tolerance: false
+
+    # The distance from the center point of the robot to place an additional scoring point, in meters
+    forward_point_distance: 0.105 # original 0,325 .... 0,105 is good

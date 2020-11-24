@@ -1,0 +1,6 @@
+<launch>
+  <!-- My package launch file -->
+  <node pkg="debug" type="debug.py" name="first_node" output="screen">
+  </node>
+</launch>
+

@@ -1,0 +1,6 @@
+<launch>
+  <!-- My package launch file -->
+  <node pkg="ex01_my_first_package" type="first_node.py" name="first_node" output="screen">
+  </node>
+</launch>
+

@@ -1,0 +1,10 @@
+<launch>
+
+    <!-- ARGUMENTS -->
+    <arg name="robot_id" default="1"/>
+
+    <!-- My package launch file -->
+    <node pkg="prj_walle" type="prj_walle_src.py" name="prj_walle_src" output="screen" ns="robot$(arg robot_id)">
+    </node>
+
+</launch>

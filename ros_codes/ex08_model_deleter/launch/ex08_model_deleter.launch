@@ -1,0 +1,3 @@
+<launch>
+    <node pkg='ex08_model_deleter' type='model_deleter.py' name='service_client' output='screen'/>
+</launch>

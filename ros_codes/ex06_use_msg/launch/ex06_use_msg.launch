@@ -1,0 +1,5 @@
+<launch>
+  <!-- My package launch file -->
+  <node pkg="ex06_use_msg" type="use_msg.py" name="use_msg" output="screen">
+  </node>
+</launch>

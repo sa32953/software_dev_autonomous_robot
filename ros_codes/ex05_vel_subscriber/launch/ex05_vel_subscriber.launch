@@ -1,0 +1,5 @@
+<launch>
+  <!-- My package launch file -->
+  <node pkg="ex05_vel_subscriber" type="my_subscriber.py" name="vel_subscriber" output="screen">
+  </node>
+</launch>

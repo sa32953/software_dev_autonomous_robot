@@ -1,0 +1,5 @@
+<launch>
+    <!-- My package launch file -->
+    <node pkg="prj_walle" type="prj_walle_src.py" name="prj_walle_src" output="screen">
+    </node>
+</launch>

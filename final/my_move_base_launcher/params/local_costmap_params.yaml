@@ -1,0 +1,21 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_footprint
+
+  update_frequency: 5.0 # original 10
+  publish_frequency: 5.0 # original 10
+  
+  transform_tolerance: 0.5  
+  # Specifies the delay in transform (tf) data that is tolerable in seconds.
+
+  static_map: false  
+  rolling_window: true
+  width: 4
+  height: 5
+
+  # With low resolution (>= 0.05), in narrow passways, the obstacle region may 
+  # overlap and thus the local planner will not be able to find a path through.
+  
+  resolution: 0.02
+  #resolution: 0.05 #Original
+  
